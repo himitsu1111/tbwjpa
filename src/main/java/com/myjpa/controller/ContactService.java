@@ -11,11 +11,13 @@ import java.util.List;
 public interface ContactService {
     List<Contact> findAll();
 
-    List<Contact> findAllWithDetail();
+//    List<Contact> findAllWithDetail();
 
-    Contact findById(Long id);
+    List<Contact> findByFirstName(String firstName);
+    List<Contact> findByFirstNameAndLastName(
+            String firstName, String lastName);
 
-    Contact save(Contact contact);
+//    Contact save(Contact contact);
 
-    void delete(Contact contact);
+//    void delete(Contact contact);
 }
